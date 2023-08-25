@@ -1,0 +1,81 @@
+1. What are comments and what is the importance if commenting in any code?
+
+Comments and Their Importance:
+Comments are annotations added to your code that are not executed by the computer. They provide explanatory information about the code's purpose, functionality, and any relevant details. Commenting is important for several reasons:
+
+Clarity: Comments help make your code more understandable to yourself and others who might read it in the future.
+Documentation: They serve as documentation for the logic behind your code, making it easier to maintain and troubleshoot.
+Collaboration: If others work with your code, comments provide insights into how the code works, saving time and reducing misunderstandings.
+Debugging: Comments can help you quickly identify and isolate sections of code during the debugging process.
+Learning: Well-commented code can serve as a valuable learning resource for novice programmers or when revisiting your own code after a long time.
+
+2. What is Call Statement and when do you use this statement?
+
+Call Statement:
+In VBA, the Call statement is used to invoke a Sub procedure. You use it before the procedure name to indicate that you're calling a procedure. However, the Call keyword is optional, and you can invoke a Sub procedure without it as well.
+
+' Using Call statement
+Call MySubProcedure()
+
+' Without Call statement (equivalent)
+MySubProcedure()
+
+The 'Call' statement is used to explicitly indicate that you're invoking a Sub procedure, but it's not commonly used in modern VBA coding.
+
+3. How do you compile a code in VBA? What are some of the problem that you might face when you don’t compile a code?
+
+Compiling Code in VBA:
+In VBA, code is compiled automatically as you write and save it. Compilation is the process of converting your human-readable code into machine-executable code. It checks for syntax errors and resolves references to objects, variables, and functions.
+
+Problems of Not Compiling Code:
+If you don't compile your code, you might face issues such as:
+
+Syntax errors and typos not being caught early.
+Unresolved references or incorrect function names.
+Unexpected behavior or crashes when running the code.
+Inefficiencies in the code due to errors not being identified.
+
+4. What are hot keys in VBA? How can you create your own hot keys?
+
+Hotkeys (Keyboard Shortcuts) in VBA:
+Hotkeys, or keyboard shortcuts, are key combinations that perform certain actions within the VBA Editor. They help you navigate, debug, and interact with your code more efficiently.
+
+Creating Custom Hotkeys:
+You cannot directly create custom hotkeys within the VBA Editor. The available hotkeys are predefined by the editor's design. However, you can customize the Excel interface by creating custom macros and assigning them to toolbar buttons, ribbon tabs, or menu items, effectively creating shortcuts to your macros.
+
+5. Create a macro and shortcut key to find the square root of the following 
+numbers 665, 89, 72, 86, 48, 32, 569, 7521 ?
+
+Here's a simple example of a macro to find the square root of numbers and assign a shortcut key to it:
+
+Sub CalculateSquareRoot()
+    Dim Number As Double
+    Dim Result As Double
+    
+    Number = InputBox("Enter a number:")
+    Result = Sqr(Number)
+    
+    MsgBox "Square root of " & Number & " is " & Result
+End Sub
+
+To assign a shortcut key:
+
+Press Alt + F8 to open the "Macro" dialog.
+Select the macro (CalculateSquareRoot).
+Click "Options."
+Assign a letter to the "Ctrl" field (for example, "S").
+Click "OK" and then "Run."
+
+6. What are the shortcut keys used to
+	a. Run the code
+	b. Step into the code
+	c. Step out of code
+	d. Reset the cod
+
+Shortcut keys in VBA:
+a. Run the code: F5 or Ctrl + G, Ctrl + R
+b. Step into the code: F8
+c. Step out of code: Shift + F8
+d. Reset the code: Ctrl + Break
+
+These shortcut keys help you execute, debug, and control the flow of your VBA code during development.

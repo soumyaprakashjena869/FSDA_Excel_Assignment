@@ -1,0 +1,214 @@
+1. Write a VBA code to enter your name in A1 Cell using Input Box and once you enter the name display a message box that says the name has been entered.
+
+VBA Code to Enter Name and Display Message:
+Sub EnterNameAndShowMessage()
+    Dim userName As String
+    userName = InputBox("Enter your name:")
+    
+    If userName <> "" Then
+        Range("A1").Value = userName
+        MsgBox "Name has been entered."
+    End If
+End Sub
+
+2. What are Userforms? Why are they used? How to fill a list box using for loop.
+
+UserForms:
+UserForms are custom dialog boxes that you can create and display in Excel using VBA. They allow you to create interactive interfaces for users to input data, make selections, and perform various actions. UserForms are used to enhance the user experience and collect structured input.
+Filling a List Box Using For Loop:
+Assuming you have a UserForm named "UserForm1" with a ListBox named "ListBox1":
+Private Sub UserForm_Initialize()
+    Dim i As Long
+    
+    For i = 1 To 10
+        ListBox1.AddItem "Item " & i
+    Next i
+End Sub
+
+
+3. What is an array? Write a VBA code to enter students and their marks from the below table.
+
+Array:
+An array is a collection of elements of the same data type. In VBA, arrays can store multiple values under a single variable name.
+
+Sub EnterStudentsAndMarks()
+    Dim studentData(1 To 5, 1 To 2) As Variant
+    Dim i As Long
+    
+    ' Populate the array with student names and marks
+    studentData(1, 1) = "Alice"
+    studentData(1, 2) = 95
+    ' ... repeat for other students
+    
+    ' Write the array data to a worksheet
+    For i = 1 To 5
+        Range("A" & i).Value = studentData(i, 1)
+        Range("B" & i).Value = studentData(i, 2)
+    Next i
+End Sub
+
+
+4. Use the following data to create a pie chart using VBA code. Use Font - ‘Times new Roman’, Size -14, Bold, Title - Piechart’ and you are per to use colours as per your taste.
+
+VBA Code to Create a Pie Chart:
+Sub CreatePieChart()
+    Dim chartSheet As ChartObject
+    Set chartSheet = Sheets.Add.ChartObjects.Add(Left:=100, Width:=375, Top:=75, Height:=225)
+    
+    chartSheet.Chart.SetSourceData Source:=Range("Sheet1!$A$1:$B$4")
+    chartSheet.Chart.ChartType = xlPie
+    
+    With chartSheet.Chart.FullSeriesCollection(1).DataLabels.Font
+        .Name = "Times New Roman"
+        .Size = 14
+        .Bold = True
+    End With
+    
+    chartSheet.Chart.HasTitle = True
+    chartSheet.Chart.ChartTitle.Text = "Pie Chart"
+End Sub
+
+
+5. Check the dataset in the link given below and create a pivot table using VBA showing the sales for the year from stationary category.
+https://docs.google.com/spreadsheets/d/1IRSEnmgz8Ro276-
+GslknRNk0zlrB5CZH1YrnT71kqFM/edit?usp=sharing
+
+Creating Pivot Table Using VBA:
+Sub CreatePivotTable()
+    Dim ws As Worksheet
+    Set ws = ThisWorkbook.Sheets("Sheet1")
+    
+    Dim ptCache As PivotCache
+    Set ptCache = ThisWorkbook.PivotCaches.Create(SourceType:=xlDatabase, SourceData:=ws.Range("A1:C100"))
+    
+    Dim pt As PivotTable
+    Set pt = ptCache.CreatePivotTable(TableDestination:=ws.Cells(10, 1))
+    
+    With pt.PivotFields("Year")
+        .Orientation = xlRowField
+        .Position = 1
+    End With
+    
+    With pt.PivotFields("Category")
+        .Orientation = xlRowField
+        .Position = 2
+    End With
+    
+    With pt.PivotFields("Sales")
+        .Orientation = xlDataField
+        .Function = xlSum
+        .NumberFormat = "#,##0"
+    End With
+End Sub
+
+
+6. Write step by step procedure to protect your workbook using a password.
+
+
+Sure, let's address each of your questions:
+
+VBA Code to Enter Name and Display Message:
+vba
+Copy code
+Sub EnterNameAndShowMessage()
+    Dim userName As String
+    userName = InputBox("Enter your name:")
+    
+    If userName <> "" Then
+        Range("A1").Value = userName
+        MsgBox "Name has been entered."
+    End If
+End Sub
+UserForms:
+UserForms are custom dialog boxes that you can create and display in Excel using VBA. They allow you to create interactive interfaces for users to input data, make selections, and perform various actions. UserForms are used to enhance the user experience and collect structured input.
+Filling a List Box Using For Loop:
+Assuming you have a UserForm named "UserForm1" with a ListBox named "ListBox1":
+
+vba
+Copy code
+Private Sub UserForm_Initialize()
+    Dim i As Long
+    
+    For i = 1 To 10
+        ListBox1.AddItem "Item " & i
+    Next i
+End Sub
+Array:
+An array is a collection of elements of the same data type. In VBA, arrays can store multiple values under a single variable name.
+vba
+Copy code
+Sub EnterStudentsAndMarks()
+    Dim studentData(1 To 5, 1 To 2) As Variant
+    Dim i As Long
+    
+    ' Populate the array with student names and marks
+    studentData(1, 1) = "Alice"
+    studentData(1, 2) = 95
+    ' ... repeat for other students
+    
+    ' Write the array data to a worksheet
+    For i = 1 To 5
+        Range("A" & i).Value = studentData(i, 1)
+        Range("B" & i).Value = studentData(i, 2)
+    Next i
+End Sub
+VBA Code to Create a Pie Chart:
+vba
+Copy code
+Sub CreatePieChart()
+    Dim chartSheet As ChartObject
+    Set chartSheet = Sheets.Add.ChartObjects.Add(Left:=100, Width:=375, Top:=75, Height:=225)
+    
+    chartSheet.Chart.SetSourceData Source:=Range("Sheet1!$A$1:$B$4")
+    chartSheet.Chart.ChartType = xlPie
+    
+    With chartSheet.Chart.FullSeriesCollection(1).DataLabels.Font
+        .Name = "Times New Roman"
+        .Size = 14
+        .Bold = True
+    End With
+    
+    chartSheet.Chart.HasTitle = True
+    chartSheet.Chart.ChartTitle.Text = "Pie Chart"
+End Sub
+Creating Pivot Table Using VBA:
+vba
+Copy code
+Sub CreatePivotTable()
+    Dim ws As Worksheet
+    Set ws = ThisWorkbook.Sheets("Sheet1")
+    
+    Dim ptCache As PivotCache
+    Set ptCache = ThisWorkbook.PivotCaches.Create(SourceType:=xlDatabase, SourceData:=ws.Range("A1:C100"))
+    
+    Dim pt As PivotTable
+    Set pt = ptCache.CreatePivotTable(TableDestination:=ws.Cells(10, 1))
+    
+    With pt.PivotFields("Year")
+        .Orientation = xlRowField
+        .Position = 1
+    End With
+    
+    With pt.PivotFields("Category")
+        .Orientation = xlRowField
+        .Position = 2
+    End With
+    
+    With pt.PivotFields("Sales")
+        .Orientation = xlDataField
+        .Function = xlSum
+        .NumberFormat = "#,##0"
+    End With
+End Sub
+Protecting Workbook with Password:
+Here is a step-by-step procedure to protect your workbook using a password:
+
+1. Open the workbook you want to protect.
+2. Press Alt + F11 to open the VBA Editor.
+3. In the Project Explorer window, locate your workbook's project (VBAProject(your_workbook_name)).
+4. Right-click on the project and select "VBAProject Properties."
+5. In the "Protection" tab, check the "Lock project for viewing" option.
+6. Enter and confirm the password.
+7. Click "OK" to close the properties window.
+8. Save and close the workbook.
+9. When you reopen the workbook, you'll be prompted for the password. Without the correct password, users won't be able to view or modify the VBA code.

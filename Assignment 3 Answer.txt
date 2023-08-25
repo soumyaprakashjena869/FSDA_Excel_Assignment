@@ -1,0 +1,34 @@
+1. Using AutoSum in Excel:
+AutoSum is a quick way to sum up a range of numbers in Excel. To use it:
+
+Click on the cell where you want the sum to appear.
+Click the "AutoSum" button on the "Home" tab of the Ribbon.
+Excel will automatically select what it thinks is the most appropriate range for the sum. You can adjust the range if needed.
+Press "Enter" to confirm and calculate the sum.
+
+When to Use AutoSum:
+AutoSum is best used when you need to quickly calculate the sum of a contiguous range of cells. It's especially useful for columns or rows of numbers where you don't need advanced functions.
+
+2. Shortcut Key for AutoSum:
+The shortcut key to perform AutoSum is Alt + =. Pressing these keys together will automatically insert the SUM function with a suggested range.
+
+3. Getting Rid of Formulas that Omit Adjacent Cells:
+If a formula is omitting adjacent cells that you want it to include, you can adjust the formula's range:
+
+Double-click on the cell containing the formula to enter edit mode.
+Modify the range of the formula to include the missing cells.
+Press "Enter" to update the formula and its result.
+
+4. Selecting Non-Adjacent Cells in Excel 2016:
+To select non-adjacent cells in Excel 2016:
+
+Click on the first cell you want to select.
+Hold down the Ctrl key (Command key on Mac).
+While holding Ctrl, click on the other cells you want to select.
+
+5. Effect of Alt + Pressing Letters OCW:
+Holding down the Alt key and pressing the letters "OCW" in quick succession is a keyboard shortcut to hide the Ribbon in Excel. It's a way to maximize the available space on your screen by temporarily hiding the Ribbon, which contains the various tabs and commands.
+
+6. Inserting a Row After Right-Clicking on a Row Reference:
+If you right-click on a row reference number (the number on the left side of the worksheet) and then click "Insert," the new row will be added above the row you right-clicked on. This action shifts the existing rows downward to make space for the newly inserted row.
+

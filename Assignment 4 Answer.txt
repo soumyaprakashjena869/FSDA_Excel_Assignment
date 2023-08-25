@@ -1,0 +1,43 @@
+1. Ribbon Commands for Insert and Delete:
+In the Excel Ribbon, you can find the Insert and Delete commands under the "Home" tab, in the "Cells" group. The specific commands you're looking for are:
+
+"Insert" with options to insert cells, rows, columns, or sheets.
+"Delete" with options to delete cells, rows, columns, or sheets.
+
+2. Effect of Setting Row Height or Column Width to 0 (Zero):
+Setting the row height or column width to 0 will hide the row or column completely. It effectively makes the row or column so narrow (or short) that it becomes invisible in the worksheet. The data within that row or column will be hidden as well.
+
+3. Changing Height and Width in a Cell:
+Changing the height and width of a cell can be necessary to accommodate the content you want to display. If the content in a cell is too large to fit within the default cell size, adjusting the height or width can make the content more readable. Additionally, formatting cells with specific dimensions can help improve the overall appearance and organization of your worksheet.
+
+4. Keyboard Shortcut to Unhide Rows:
+The keyboard shortcut to unhide rows is:
+
+Select the rows above and below the hidden rows.
+Press Ctrl + Shift + 9.
+
+5. Hiding Rows Containing Blank Cells:
+To hide rows containing blank cells, you can use the following steps:
+
+Select the range of rows you want to check for blank cells.
+Go to the "Home" tab on the Ribbon.
+In the "Editing" group, click on "Find & Select."
+Choose "Go To Special."
+In the dialog box, select "Blanks" and click "OK."
+Right-click on the selected rows and choose "Hide."
+
+6. Steps to Hide Duplicate Values Using Conditional Formatting:
+Here's how you can hide duplicate values using conditional formatting:
+
+Select the range of cells where you want to find duplicates.
+Go to the "Home" tab on the Ribbon.
+In the "Styles" group, click on "Conditional Formatting."
+Choose "Highlight Cells Rules" and then select "Duplicate Values."
+In the dialog box, you can choose a format for the duplicates. However, instead of formatting, we'll hide them.
+Select a font color that matches the cell's background color (typically white).
+Click "OK."
+Now, the duplicate values will be hidden because their font color matches the background color, making them invisible. Please note that the exact steps might vary slightly depending on your Excel version.
+
+
+
+

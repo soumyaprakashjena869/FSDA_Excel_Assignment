@@ -1,0 +1,49 @@
+1. Dollar ($) Sign in Excel:
+The dollar sign ($) is used in Excel to create an absolute cell reference. 
+When you use an absolute cell reference, the referenced cell's row and column won't change when you copy the formula to another location. 
+This is helpful when you want to lock a specific cell reference while copying formulas.
+
+2. Changing Reference to Absolute (or Mixed):
+To change a reference from relative to absolute (or mixed), you can add dollar signs to the row and/or column portion of the reference. Here's how:
+
+To make a reference fully absolute (both row and column): $A$1
+To make a reference column absolute and row relative: $A1
+To make a reference row absolute and column relative: A$1
+
+3. Order of Operations in Excel:
+Excel follows the PEMDAS/BODMAS rule, 
+which stands for Parentheses/Brackets, Exponents/Orders, 
+Multiplication and Division (left to right), 
+and Addition and Subtraction (left to right). 
+Formulas are evaluated following this sequence to determine the correct calculation.
+
+4. Top 5 Functions in Excel:
+
+SUM Function:
+Syntax: =SUM(number1, number2, ...)
+
+AVERAGE Function:
+Syntax: =AVERAGE(number1, number2, ...)
+
+IF Function:
+Syntax: =IF(logical_test, value_if_true, value_if_false)
+
+VLOOKUP Function:
+Syntax: =VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
+
+INDEX-MATCH Function (often preferred over VLOOKUP):
+Syntax: =INDEX(result_range, MATCH(lookup_value, lookup_range, [match_type]))
+
+
+5. Using the SUBTOTAL Function:
+The SUBTOTAL function is used to calculate various aggregate functions, such as SUM, AVERAGE, COUNT, etc., on a range of data, excluding other SUBTOTAL functions within that range. It's commonly used in situations where you want to perform calculations on a filtered range of data, as it automatically considers only the visible cells after filtering.
+
+6. Syntax of VLOOKUP Function:
+The VLOOKUP function is used to search for a value in the leftmost column of a table and return a value in the same row from a specified column.
+Syntax: =VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
+
+lookup_value: The value to be looked up.
+table_array: The range where the lookup value is located, along with the data you want to retrieve.
+col_index_num: The column number in the table_array from which you want to retrieve data.
+range_lookup: Optional. Enter FALSE for an exact match, TRUE (or omitted) for an approximate match.
+For example, to find the price of an item with the code "A123" in a table where the codes are in column A and the prices are in column B, you could use: =VLOOKUP("A123", A1:B100, 2, FALSE)'

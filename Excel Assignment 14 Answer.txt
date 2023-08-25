@@ -1,0 +1,22 @@
+1. How much Diamonds were looted from Chennai Port Trust?
+
+Answer - 7128 Ounces
+
+2. How many Ships were looted near Paradip Port Trust and Chennai Port Trust?
+
+Answer - 3
+
+3. What is the sum total of Diamonds looted from the V.O. Chidambarnar port trust?
+
+Answer - 9887 Ounces
+
+4. What is the average amount of Diamonds and Soft drinks looted?
+
+Answer - 2227.758621 Gallons
+
+5. What is the ratio of soft drinks drunk to soft drinks looted?
+
+Answer - 0.39201664
+		OR
+		TEXT(A1, "0") & ":" & TEXT(B1, "0")
+		Answer - 129210:50652

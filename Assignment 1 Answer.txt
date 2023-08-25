@@ -1,0 +1,35 @@
+1. Cells in an Excel Sheet:
+In an Excel sheet, a cell is the intersection point of a row and a column. Each cell is identified by a unique address, which is a combination of its column letter and row number (e.g., A1, B2, C3). Cells are used to store and display data, including numbers, text, dates, and formulas.
+
+2. Restricting Copying of Cells:
+To restrict someone from copying a cell from your worksheet, you can apply the following steps:
+
+Protect the worksheet: Go to the "Review" tab, click on "Protect Sheet," and set a password. This prevents users from making changes to cells, including copying.
+Protect the workbook: You can protect the entire workbook with a password, which will prevent unauthorized users from copying cells or making changes to the workbook's structure.
+
+3. Moving or Copying a Worksheet to Another Workbook:
+
+To move or copy a worksheet to another workbook, follow these steps:
+
+Right-click on the worksheet tab.
+Select "Move or Copy."
+In the dialog box, choose the target workbook from the dropdown.
+Select whether you want to move or copy the worksheet.
+Click "OK."
+
+4. Shortcut for Opening a New Window Document:
+In Excel, the shortcut for opening a new window for the same document is Ctrl + N. This allows you to view and work on the same Excel file in two separate windows, which can be helpful for comparing or editing different parts of the document simultaneously.
+
+Things Noticed After Opening Excel Interface:
+After opening the Excel interface, you'll typically notice the following:
+
+A blank workbook with sheets labeled "Sheet1," "Sheet2," etc.
+The Ribbon: It contains various tabs (e.g., Home, Insert, Page Layout) that provide access to different Excel features.
+Formula Bar: Displays the content of the active cell and allows you to edit cell contents and enter formulas.
+Name Box: Displays the reference of the active cell.
+Column Letters and Row Numbers: These help in referencing cells using their unique addresses.
+
+5. Using Relative Cell Reference in Excel:
+A relative cell reference in Excel is used when you want a formula to adjust automatically when it's copied to different cells. In a relative reference, the cell address is expressed relative to the position of the formula cell. For example, if you have a formula =A1+B1 in cell C1 and you copy it to cell C2, it will adjust to =A2+B2.
+
+Relative references are useful when you want to perform the same calculations on different sets of data. When you copy a formula containing relative references, Excel will automatically adjust the references based on their relative positions, making it easier to apply the same logic to multiple cells without manually changing the references.

@@ -1,0 +1,69 @@
+1. Examples of Functions in Different Dropdowns:
+
+AutoSum Category:
+
+SUM: Adds up a range of numbers.
+AVERAGE: Calculates the average of a range of numbers.
+COUNT: Counts the number of cells that contain numbers in a range.
+MIN: Returns the smallest value in a range.
+MAX: Returns the largest value in a range.
+Recently Used Category:
+Functions that you've recently used will appear here. The list varies based on your usage.
+
+Text Category:
+
+CONCATENATE: Joins together multiple text strings into one.
+LEFT: Returns a specified number of characters from the beginning of a text string.
+RIGHT: Returns a specified number of characters from the end of a text string.
+LEN: Returns the number of characters in a text string.
+Date & Time Category:
+
+TODAY: Returns the current date.
+NOW: Returns the current date and time.
+YEAR: Returns the year from a date.
+MONTH: Returns the month from a date.
+Math & Trig Category:
+
+ROUND: Rounds a number to a specified number of decimal places.
+SQRT: Returns the square root of a number.
+RAND: Returns a random number between 0 and 1.
+PI: Returns the value of pi.
+
+
+2. Selecting Columns and Rows:
+You can select columns and rows in the following ways:
+
+Click and Drag: Click on the column/row header and drag your mouse to select multiple columns/rows.
+Shift + Arrow Keys: Press and hold the "Shift" key and use the arrow keys to extend the selection.
+Ctrl + Space: Selects the entire column of the active cell.
+Shift + Space: Selects the entire row of the active cell.
+Ctrl + Click: Hold the "Ctrl" key and click on individual column/row headers to select non-contiguous columns/rows.
+
+
+3. AutoFit and its Use:
+AutoFit automatically adjusts the width of a column or the height of a row to accommodate the content within it. It's useful when you want to ensure that all the content in a cell is visible without excessive empty space. To use AutoFit:
+
+Double-click the boundary between two column/row headers to AutoFit the width/height of the selected column or row.
+Right-click and select "AutoFit Column Width" or "AutoFit Row Height" from the context menu.
+
+
+4. Inserting New Rows and Columns into an Existing Table:
+
+To insert a new row, right-click on the row header where you want to insert the row and select "Insert" from the context menu.
+To insert a new column, right-click on the column header where you want to insert the column and select "Insert" from the context menu.
+
+
+5. Hiding and Unhiding Columns:
+
+To hide columns, select the columns you want to hide, right-click, and choose "Hide."
+To unhide columns, select the adjacent columns, right-click, and choose "Unhide."
+
+
+6. Creating a Table with AutoSum:
+Suppose you have a table of expenses with a column labeled "Amount." Here's how to use AutoSum to calculate the total:
+
+Select a cell where you want the total to appear.
+Go to the "Formulas" tab on the Ribbon.
+Click on the "AutoSum" dropdown arrow.
+Choose "Sum" from the dropdown.
+Excel will automatically select the range for the sum based on the adjacent cells. Press "Enter" to apply the function.

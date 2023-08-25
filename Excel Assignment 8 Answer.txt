@@ -1,0 +1,55 @@
+1. AutoComplete Feature:
+The AutoComplete feature in Excel predicts and suggests the completion of text based on what you've already entered in a cell. As you start typing a word or phrase, Excel displays a dropdown list with suggestions, and you can select the desired entry from the list. This feature helps speed up data entry and reduces the need for manual typing.
+
+Benefits of Using AutoComplete:
+
+Time-Saving: AutoComplete saves time by reducing the need to type repetitive or lengthy text.
+Accuracy: It minimizes the chances of errors that can occur during manual typing.
+Consistency: Ensures consistency in the data you enter by suggesting existing entries.
+Ease of Use: Particularly useful for long or complex names, addresses, or terms.
+
+
+2. Working with Workbooks and Cells:
+
+Workbooks: A workbook in Excel is like a file that can contain multiple worksheets. It can store a collection of data, calculations, charts, and more. You can add, delete, and manage worksheets within a workbook.
+Cells: Cells are the individual rectangles within a worksheet grid where you can enter and store data. Cells are identified by their row and column intersections, such as A1, B2, etc.
+
+
+3. Fill Handle in Excel:
+The Fill Handle is a small square at the lower right corner of a selected cell. When you drag the fill handle, Excel can automatically fill adjacent cells with a series of values or patterns based on the content of the selected cell. It's a quick way to copy and extend data patterns.
+
+
+4. Examples of Using the Fill Handle:
+
+Autofill Series: Type a value in a cell (e.g., 1) and use the fill handle to drag down. Excel will automatically fill the adjacent cells with a series (2, 3, 4, ...).
+Copying Formulas: If you have a formula in one cell that references other cells, use the fill handle to copy the formula to adjacent cells while adjusting the cell references accordingly.
+Copying Text: Type a word in a cell and use the fill handle to drag across to copy the same text to adjacent cells.
+
+
+5. Flash Fill:
+Flash Fill is a feature in Excel that allows you to quickly extract, combine, or manipulate data without using complex formulas. It's particularly useful when you need to format or rearrange data in specific ways.
+
+Ways to Access Flash Fill:
+
+Automatic Detection: When Excel detects a pattern in your data entry, it might suggest using Flash Fill, and you can press Ctrl + E to accept the suggestion.
+Manual Use: If Excel doesn't automatically detect the pattern, you can start Flash Fill by typing an example in the adjacent column, and then pressing Ctrl + E to apply the pattern to the entire column.
+Flash Fill is a powerful tool for data manipulation, especially when dealing with text transformations, splitting or combining data, and more. It reduces the need for writing complex formulas or using multiple steps.
+
+
+6. Extracting First Name and Last Name:
+
+In a new column next to "Mail Id," type an example formula for the first name, like "John.Doe@example.com."
+Press Ctrl + E to apply Flash Fill. 
+Excel will automatically recognize the pattern and fill in the first names.
+In another column next to the one with first names, type an example formula for the last name, like "John.Doe@example.com."
+Press Ctrl + E to apply Flash Fill. 
+
+Excel will recognize the pattern and fill in the last names.
+Extracting City, State, and Pin Code:
+
+In a new column next to "Address," type an example formula for the city, like "123 Main St, New York, NY 12345."
+Press Ctrl + E to apply Flash Fill. Excel will automatically extract the city names.
+In another column next to the one with city names, type an example formula for the state, like "123 Main St, New York, NY 12345."
+Press Ctrl + E to apply Flash Fill. Excel will recognize the pattern and fill in the state names.
+In another column next to the one with state names, type an example formula for the pin code, like "123 Main St, New York, NY 12345."
+Press Ctrl + E to apply Flash Fill. Excel will extract the pin codes.
